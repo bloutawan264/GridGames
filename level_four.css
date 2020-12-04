@@ -1,26 +1,27 @@
 .container {
   display: grid;
-
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: 1fr 1fr 200px 1fr;
 }
 
 #navbar {
-
+grid-column: span 5;
 }
 
 #sidebar {
   writing-mode: vertical-rl;
-
+grid-row: span 2;
 }
 
 #title {
-
+ grid-column: span 4;
 }
 
 
 #content {
-
+ grid-column: 4;
 }
 
 #footer {
-
+ grid-column: 5;
 }
